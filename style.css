@@ -53,6 +53,24 @@ body {
     transition: 0.5s;
 }
 
+/* JS Styling Active Class */
+.accordion .content-container.active .answer {
+    height: 150px;
+}
+
+.accordion .content-container.active .question {
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.accordion .content-container.active .question::after {
+    content: "-";
+    font-size: 30px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
 footer {
     position: absolute;
     bottom: 0;
