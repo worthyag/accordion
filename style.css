@@ -12,16 +12,55 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
     background-color: rgb(61, 67, 169);
-    color: #fff;
-    flex-direction: column;
+    color: #000;
+    background: url(./img/questions.jpg) no-repeat center center/ cover;
+}
+
+.accordion {
+    width: 65%;;
+    background-color: #fff;
+    padding: 32px;
+    border-radius: 32px;
+}
+
+.accordion .accordion-title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.accordion .content-container .question {
+    padding: 16px 0;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: solid 1px #000;
+    position: relative;
+}
+
+.accordion .content-container .question::after {
+    content: "+";
+    position: absolute;
+    right: -8px;
+}
+
+.accordion .content-container .answer {
+    padding-top: 16px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.615);
+    padding: 4px 8px;
+    border-radius: 8px;
 }
 
 #github-name {
